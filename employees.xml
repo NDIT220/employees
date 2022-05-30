@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<!DOCTYPE employees[
+  <!ELEMENT employees (record*)>
+  <!ELEMENT record (employeeNumber, firstName, lastName, address, email)>
+  <!ELEMENT employeeNumber (#PCDATA)>
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT lastName (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+]>
+
+<!-- The root element should be the same as file name -->
+<employees>
+  <record>
+    <employeeNumber>1001</employeeNumber>
+    <firstName>George</firstName>
+    <lastName>Jamieson</lastName>
+    <address>5 Unknown Street, USA</address>
+    <email>gc@yahoo.com</email>
+  </record>
+  <record>
+    <employeeNumber>1002</employeeNumber>
+    <firstName>Sophie</firstName>
+    <lastName>Garner</lastName>
+    <address>4 Berry Street, Sydney</address>
+    <email>sgarner@hotmail.com</email>
+  </record>
+
+</employees>
